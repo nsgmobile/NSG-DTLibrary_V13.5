@@ -731,11 +731,7 @@ import static java.lang.Math.sin;
 
                                          }
                                     } else {
-                                        if(currentGpsPosition.toString().startsWith("lat/lng: (17")) {
-
-                                        }else{
-                                            MoveWithGpsPointInRouteDeviatedPoints(currentGpsPosition);
-                                        }
+                                       MoveWithGpsPointInRouteDeviatedPoints(currentGpsPosition);
                                     }
                                     //Navigation code ends here
                                     handler.postDelayed(this, delay);
@@ -1363,9 +1359,9 @@ import static java.lang.Math.sin;
                                          Log.e("Route Deviation", "RouteDeviation_RouteSt_point " + Route_st);
 
                                          // drawMarkerWithCircle(RouteDeviation_RouteSt_point,20);
-                                         double rd_ditance=distFrom(RouteDeviation_RouteSt_point.latitude,RouteDeviation_RouteSt_point.longitude,markerPosition.latitude,markerPosition.longitude);
-                                         Log.e("Route Deviation", "RouteDeviation_RouteSt_point Distance Buffer" + rd_ditance);
-                                         if(rd_ditance<20) {
+                                        // double rd_ditance=distFrom(RouteDeviation_RouteSt_point.latitude,RouteDeviation_RouteSt_point.longitude,markerPosition.latitude,markerPosition.longitude);
+                                       //  Log.e("Route Deviation", "RouteDeviation_RouteSt_point Distance Buffer" + rd_ditance);
+                                        // if(rd_ditance<20) {
                                              if (consRouteDeviatedDistList != null && consRouteDeviatedDistList.size() > 3) {
                                                  double routeDeviated_distance_1 = consRouteDeviatedDistList.get(consRouteDeviatedDistList.size() - 1);
                                                  double routeDeviated_distance_2 = consRouteDeviatedDistList.get(consRouteDeviatedDistList.size() - 2);
@@ -1398,12 +1394,12 @@ import static java.lang.Math.sin;
                                                      }
                                                  }
                                              }
-                                         }
-                                         if(currentGpsPosition.toString().startsWith("lat/lng: (")){
+                                         //}
+                                        // if(currentGpsPosition.toString().startsWith("lat/lng: (")){
 
-                                         }else {
+                                        // }else {
                                              MoveWithGpsPointInRouteDeviatedPoints(currentGpsPosition);
-                                         }
+                                       //  }
 
                                      } else {
 
