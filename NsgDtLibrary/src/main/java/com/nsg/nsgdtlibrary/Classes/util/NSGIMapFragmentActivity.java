@@ -1544,11 +1544,11 @@ import static java.lang.Math.sin;
                  //   Log.e("Route Deviation", " Second Cordinate From Route deviation " + SecondCordinate);
 
                  nearestPositionPoint = findNearestPoint(currentGpsPosition, FirstCordinate, SecondCordinate);
-                 //  Log.e("Route Deviation", " NEAREST POSITION From Route deviation " + nearestPositionPoint);
+                //  Log.e("Route Deviation", " NEAREST POSITION From Route deviation " + nearestPositionPoint);
                  OldNearestGpsList.add(nearestPositionPoint);
              }
-            // Log.e("Route Deviation", " OldGps POSITION From Route deviation " + OldGpsRouteDeviation);
-            // Log.e("Route Deviation", " NEAREST POSITION From Route deviation " + nearestPositionPoint);
+             Log.e("Route Deviation", " OldGps POSITION From Route deviation " + OldGpsRouteDeviation);
+             Log.e("Route Deviation", " NEAREST POSITION From Route deviation " + nearestPositionPoint);
              nearestPointValuesList.add(nearestPositionPoint);
 
              if ( OldGpsRouteDeviation  != null && nearestPositionPoint != null) {
